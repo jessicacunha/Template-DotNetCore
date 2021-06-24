@@ -22,10 +22,7 @@ namespace Template.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            this.userService.test();
-            return Ok("OK");
+           return Ok(this.userService.Get());
         }
-        
-
     }
 }
